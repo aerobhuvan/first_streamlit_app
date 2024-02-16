@@ -1,5 +1,6 @@
 import streamlit
 import pandas
+import snowflake.connector
 
 streamlit.title('Bhuvi First app');
 streamlit.header('Bhuvi header');
