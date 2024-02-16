@@ -16,5 +16,5 @@ streamlit.header('Fruity Vice Advice');
 #New section to display fruitviceapi
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+"kiwi")
-fruityvice_normalized = pandas.json_normalized(fruityvice_response.json())
+fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized);
